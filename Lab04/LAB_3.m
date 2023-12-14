@@ -95,6 +95,14 @@ for k=1:length(lines)
     
 end
 
+%% 
+I = imread('cameraman.tif');
+imshow(I)
+
+edges = edge(I);
+figure;
+imshow(edges)
+
 %%
 % Frage-1
 % Aufgabe: Erkennen Sie mithilfe der Hough-Transformation Kreise in einem Bild, beispielsweise Münzen im Bild
